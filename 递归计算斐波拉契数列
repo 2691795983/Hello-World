@@ -1,0 +1,12 @@
+//递归计算斐波拉契数列
+
+#include<stdio.h>
+int fun(int n)
+{
+	if(n==1||n==2)//通过数列的规律发现,前两项都为1,作为递归的终止条件
+	{
+		return 1;
+	}
+	else
+	{
+		return fun(n-1)+fun(n-2);//要求第n项,就是求n-1项和n-2项的和
